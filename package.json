@@ -1,0 +1,52 @@
+{
+  "name": "marshal-snippets",
+  "displayName": "marshal Snippets",
+  "version": "0.1.0",
+  "publisher": "marshal93@163.com",
+  "author": "marshal93@163.com",
+  "categories": [
+    "Snippets"
+  ],
+  "description": "marshal Snippets for VS Code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marshal-base/marshal-snippets.git"
+  },
+  "icon": "images/logo.png",
+  "keywords": [
+    "marshal",
+    "vue",
+    "snippets"
+  ],
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "devDependencies": {
+    "vscode": "0.10.x"
+  },
+  "license": "MIT",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/ui.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/ui.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/ui.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue-el.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/ui.json"
+      }
+    ]
+  }
+}

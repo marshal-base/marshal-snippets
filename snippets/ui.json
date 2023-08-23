@@ -1,0 +1,191 @@
+{
+  "base: 折叠面板": {
+    "prefix": "sqAccordion",
+    "body": [
+      "<sq-accordion v-model=\"accordionModel\">",
+      "\t<sq-accordion-item title=\"${1:面板}\" name=\"1\">",
+      "\t\t${2}",
+      "\t<sq-accordion-item>",
+      "\t<sq-accordion-item title=\"${3:面板}\" name=\"2\">",
+      "\t\t${4}",
+      "\t<sq-accordion-item />",
+      "</sq-accordion>"
+    ],
+    "description": "折叠面板"
+  },
+  "base: 按钮": {
+    "prefix": "sqButton",
+    "body": [
+      "<sq-button type=\"${1|default,primary,ghost|}\" :disabled=\"${2:false}\" size=\"${3|default,small,large|}\" :icon=\"${4:false}\" @click=\"handle${5}Click(${6})\">${7:默认按钮}</sq-button>"
+    ],
+    "description": "按钮"
+  },
+  "base: 单元格": {
+    "prefix": "sqCell",
+    "body": [
+      "<sq-cell-group v-model=\"cellModel\">",
+      "\t<sq-cell title=\"${1:title}\" :value=\"${2}\" />",
+      "\t<sq-cell title=\"${3:title}\" :value=\"${4}\" />",
+      "</sq-cell-group>"
+    ],
+    "description": "单元格"
+  },
+  "base: 加载更多": {
+    "prefix": "sqLoad",
+    "body": [
+      "<sq-loadmore :loading=\"${1:loading}\" :bottom-fun=\"fetchMoreList\" :is-finished-load=\"isFinishedLoad\" :bottom-finished-text=\"finishedText\">",
+      "\t ${2}",
+      "</sq-loadmore />"
+    ],
+    "description": "加载更多"
+  },
+  "base: 通告栏": {
+    "prefix": "sqNoticeBar",
+    "body": [
+      "<sq-notice-bar :text=\"noticeText\" mode=\"${1|close,link|}\" :delay=\"${2:1}\" />"
+    ],
+    "description": "通告栏 text|文案，delay|延迟几秒轮播"
+  },
+  "base: 弹出层": {
+    "prefix": "sqPopup",
+    "body": [
+      "<sq-popup v-model=\"visiblePopup\" position=\"${1|bottom,center,top,right|}\" :close-on-click-overlay=\"${2|true,false|}\" :hide-mask=\"${3|false,true|}\">",
+      "\t ${4}",
+      "</sq-popup>"
+    ],
+    "description": "弹出层 close-on-click-overlay|点击蒙层是否关闭，hide-mask|是否显示蒙层"
+  },
+  "base: 步进器": {
+    "prefix": "sqStepper",
+    "body": [
+      "<sq-stepper :readonly-input=\"${1|false,true|}\" v-model=\"stepperModel\" :step=\"1\" :min=\"0\" />"
+    ],
+    "description": "步进器 step|数字间隔，min|最小值，max|最大值"
+  },
+  "base: 步骤条": {
+    "prefix": "sqSteps",
+    "body": [
+      "<sq-steps :active=\"stepActive\">",
+      "\t<sq-step-item>",
+      "\t\t${1}",
+      "\t</sq-step-item>",
+      "\t<sq-step-item>",
+      "\t\t${2}",
+      "\t</sq-step-item>",
+      "</sq-steps>"
+    ],
+    "description": "步骤条 active|选择的第几项对应 index"
+  },
+  "base: 轮播": {
+    "prefix": "sqSwiper",
+    "body": [
+      "<sq-swiper :touchable=\"${1|false,true|}\" :show-indicators=\"${2|true,false|}\">",
+      "\t<sq-swiper-item>${3}</sq-swiper-item>",
+      "\t<sq-swiper-item>${4}</sq-swiper-item>",
+      "\t<sq-swiper-item>${5}</sq-swiper-item>",
+      "</sq-swiper>"
+    ],
+    "description": "轮播 touchable|是否禁用手势滑动，show-indicators|是否显示指示器"
+  },
+  "base: 标签页": {
+    "prefix": "sqTabs",
+    "body": [
+      "<sq-tabs :active=\"activeTabs\" :sticky=\"${1|false,true|}\" type=\"${2|line,block|}\" :line-scale=\"1\" font-size=\"16\" :title-height=\"48\" :hide-line=\"${3|false,true|}\">",
+      "\t<sq-tabpane label=\"第一年\" name=\"name1\">标签一的内容</sq-tabpane>",
+      "\t<sq-tabpane label=\"第二年\" name=\"name2\">标签二的内容</sq-tabpane>",
+      "</sq-tabs>"
+    ],
+    "description": "标签页 sticky|是否固定显示，type|标签样式线性或块状"
+  },
+  "base: 评分": {
+    "prefix": "sqRater",
+    "body": [
+      "<sq-rater :min=\"0\" :max=\"5\" charsetIcon=\"star\" :value=\"raterValue\" :disabled=\"false\" @getScore=\"getScore\" />"
+    ],
+    "description": "评分 step|数字间隔，min|最小值，max|最大值"
+  },
+  "form: checkbox": {
+    "prefix": "sqCheckbox",
+    "body": [
+      "<sq-checkbox-group v-model=\"checkboxModel\" type=\"${1|cell,cell-between|}\" @change=\"handleCheckboxChange\">",
+      "\t<sq-checkbox name=\"${2:name1}\" :disabled=\"${3|false,true|}\" borderType=\"${4|round,square|}\">${5}</sq-checkbox>",
+      " </sq-checkbox-group>"
+    ],
+    "description": "多选框"
+  },
+  "form: radio": {
+    "prefix": "sqRadio",
+    "body": [
+      "<sq-radio-group v-model=\"radioGroupModel\" type=\"${1|cell,cell-between|}\" @change=\"handleRadioChange\">",
+      "\t<sq-radio name=\"${2:name1}\" :disabled=\"${3|false,true|}\" type=\"${4|round,square,square-border|}\" />",
+      "</sq-radio-group>"
+    ],
+    "description": "单选框"
+  },
+  "form: field": {
+    "prefix": "sqField",
+    "body": [
+      "<sq-field label=\"${1}\" :readonly=\"${2:readonly}\" :required=\"${3:!readonly}\" right placeholder=\"${4|请选择,请输入|}\" v-model=\"fieldModel\" @click=\"handleFieldClick(${5})\" />"
+    ],
+    "description": "表单"
+  },
+  "form: fieldLink": {
+    "prefix": "sqFieldLink",
+    "body": [
+      "<sq-field label=\"${1}\" :readonly=\"${2:readonly}\" :is-link=\"true\" :required=\"true\" right placeholder=\"${2|请选择,请输入|}\" v-model=\"fieldModel\" @click=\"handleFieldClick(${3})\">",
+      "\t<img width=\"16\" slot=\"label-tooltips\" src=\"~@/assets/images/alert.png\" />",
+      "\t<span slot=\"icon\" style=\"margin-left: -8px; display: inline-block; margin-top: 1px\">${4}</span>",
+      "</sq-field>"
+    ],
+    "description": "表单带点击事件"
+  },
+  "form: fieldGroup": {
+    "prefix": "sqfieldgroup",
+    "body": [
+      "<sq-field-group>",
+      "\t<sq-field label=\"${1}\" :readonly=\"${2:readonly}\" :required=\"${3:!readonly}\" right placeholder=\"${4|请选择,请输入|}\" v-model=\"fieldModel\" @click=\"handleFieldClick(${5})\" />",
+      "</sq-field-group>"
+    ],
+    "description": "表单组"
+  },
+  "form: 开关": {
+    "prefix": "sqSwitch",
+    "body": [
+      "<sq-switch v-model=\"switchModel\" size=\"${1:30px}\" :disabled=\"${2:false}\" />"
+    ],
+    "description": "开关"
+  },
+  "action: 勾选协议": {
+    "prefix": "sqagree",
+    "body": [
+      "<sq-agree v-model=\"isAgree\" borderType=\"${1|round,square,square-border|}\">",
+      "\t我已阅读并完全同意",
+      "\t<span @click.stop=\"agreement('expolicy')\">《保险条款》</span>",
+      "\t<span @click.stop=\"agreement('policy')\">《投保须知》</span>",
+      "\t<span @click.stop=\"agreement('notification')\">《客户告知书》</span>",
+      "\t<span @click.stop=\"agreement('disclaimer')\">《免责条款》</span>",
+      "\t<span @click.stop=\"agreement('privacy')\">《隐私条款》</span>",
+      "</sq-agree>"
+    ],
+    "description": "勾选协议"
+  },
+  "action: 选择地区弹层": {
+    "prefix": "sqArea",
+    "body": [
+      "<sq-popup v-model=\"visibleAreaPopup\" position=\"bottom\">",
+      "\t<sq-area v-model=\"areaModel\" title=\"选择地区\" :area-data=\"areaData\" @on-confirm=\"handleAreaConfirm\" @on-cancel=\"visibleAreaPopup = false\" />",
+      "</sq-popup>"
+    ],
+    "description": "选择地区弹层"
+  },
+  "action: 发送短信": {
+    "prefix": "sqSendCode",
+    "body": [
+      "<sq-field label=\"${1:验证码}\">",
+      "\t<template slot=\"control\">",
+      "\t\t<sq-sendcode v-model=\"intervalCodeModel\" ref=\"sqSendCode\" :code.sync=\"checkCode\" session-storage-key=\"${2:MEC}_BINDING_CODE_KEY_${3:demo}\" @click=\"getValidateCode\" />",
+      "\t</template>",
+      "</sq-field>"
+    ]
+  }
+}

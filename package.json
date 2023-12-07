@@ -1,7 +1,7 @@
 {
   "name": "marshal-snippets",
   "displayName": "marshal Snippets",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "marshal93@163.com",
   "author": "marshal93@163.com",
   "categories": [
@@ -32,6 +32,10 @@
         "path": "./snippets/ui.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/common.json"
+      },
+      {
         "language": "html",
         "path": "./snippets/ui.json"
       },
@@ -41,11 +45,11 @@
       },
       {
         "language": "vue",
-        "path": "./snippets/vue-el.json"
+        "path": "./snippets/common.json"
       },
       {
-        "language": "vue-html",
-        "path": "./snippets/ui.json"
+        "language": "vue",
+        "path": "./snippets/vue-el.json"
       }
     ]
   }

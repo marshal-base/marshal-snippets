@@ -52,7 +52,7 @@
       "",
       "<script>",
       "export default {",
-      "\tname: 'test',",
+      "\tname: 'dialog-demo',",
       "\tprops: {",
       "\t\tvisible: {",
       "\t\t\ttype: Boolean,",

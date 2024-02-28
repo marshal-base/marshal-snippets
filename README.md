@@ -27,6 +27,7 @@
 	* 勾选协议 `sqagree`
 	* 选择地区弹层 `sqArea`
 	* 发送短信 `sqSendCode`
+* `command`: `openElement` 打开 Element-UI 官网
 * TODO
 
 ## 如何开发自己的 VSCode 插件

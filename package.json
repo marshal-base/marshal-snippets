@@ -1,7 +1,7 @@
 {
   "name": "marshal-snippets",
   "displayName": "marshal Snippets",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "publisher": "marshal",
   "author": "marshal93@163.com",
   "categories": [
@@ -19,38 +19,60 @@
     "snippets"
   ],
   "engines": {
-    "vscode": "^1.0.0"
+    "vscode": "^1.74.0"
   },
+  "main": "./out/extension.js",
   "devDependencies": {
-    "vscode": "0.10.x"
+    "@types/node": "^16.18.34",
+    "@types/pretty": "^2.0.3",
+    "@types/vscode": "^1.73.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.26.0",
+    "typescript": "^5.2.2"
   },
   "license": "MIT",
   "contributes": {
+    "commands": [
+      {
+        "command": "extension.openElement",
+        "title": "Open Element-UI on VSCode"
+      }
+    ],
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/ui.json"
+        "path": "./out/snippets/ui.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/common.json"
+        "path": "./out/snippets/common.json"
       },
       {
         "language": "html",
-        "path": "./snippets/ui.json"
+        "path": "./out/snippets/ui.json"
       },
       {
         "language": "vue",
-        "path": "./snippets/ui.json"
+        "path": "./out/snippets/ui.json"
       },
       {
         "language": "vue",
-        "path": "./snippets/common.json"
+        "path": "./out/snippets/common.json"
       },
       {
         "language": "vue",
-        "path": "./snippets/vue-el.json"
+        "path": "./out/snippets/vue-el.json"
       }
     ]
+  },
+  "scripts": {
+    "vscode:prepublish": "sh build.sh",
+    "compile": "sh build.sh",
+    "watch": "sh build.sh --watch",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "shelljs": "^0.8.5"
   }
 }

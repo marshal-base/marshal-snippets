@@ -1,10 +1,12 @@
-import { QuickPickItem } from 'vscode'
+import {
+  QuickPickItem
+} from 'vscode';
 
-export interface IElementUIComponent {
-  title: string
-  path: string
+export interface IElementUiComponent {
+  title: string;
+  path: string;
 }
 
 export interface IQuickPickItem extends QuickPickItem {
-  path: string
+  path: string;
 }

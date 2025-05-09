@@ -5,10 +5,10 @@
       "<sq-accordion v-model=\"accordionModel\">",
       "\t<sq-accordion-item title=\"${1:面板}\" name=\"1\">",
       "\t\t${2}",
-      "\t<sq-accordion-item>",
+      "\t</sq-accordion-item>",
       "\t<sq-accordion-item title=\"${3:面板}\" name=\"2\">",
       "\t\t${4}",
-      "\t<sq-accordion-item />",
+      "\t</sq-accordion-item>",
       "</sq-accordion>"
     ],
     "description": "折叠面板"

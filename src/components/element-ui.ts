@@ -1,6 +1,6 @@
 import {
-  IElementUIComponent
-} from '../types'
+  IElementUiComponent
+} from '../types';
 
 export default [
   {
@@ -247,4 +247,4 @@ export default [
     path: 'drawer',
     title: 'Drawer 抽屉'
   }
-] as IElementUIComponent[]
+] as IElementUiComponent[];

@@ -1,5 +1,5 @@
-import elementUiList from "./element-ui";
+import elementUiList from './element-ui';
 
 export {
   elementUiList
-}
+};

@@ -1,3 +1,6 @@
+### 20250613
+* 增加 `vant` 下拉刷新列表
+
 ### 20250509
 * 增加 `eslint`
 * 增加 `command`: `extension.openUri`

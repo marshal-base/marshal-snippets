@@ -5,7 +5,7 @@
 * `Vue` 项目中使用 `Promise` 弹层组件时，弹层组件代码格式不统一
 
 ## 如何使用
-* 在 `Vue` 文件中创建弹层组件 `VueInitElDialog`
+### snippets
 * sq-ui 片段
 	* 折叠面板 `sqAccordion`
 	* 按钮 `sqButton`
@@ -27,6 +27,10 @@
 	* 勾选协议 `sqagree`
 	* 选择地区弹层 `sqArea`
 	* 发送短信 `sqSendCode`
+	* `vant` 下拉刷新列表 `VantInitList`
+	* `element-ui` 弹层 `VueInitElDialog`
+
+### command
 * `command`: `openElement` 打开 Element-UI 官网
 * `command`: `openUri` 打开链接
 

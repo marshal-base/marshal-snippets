@@ -1,7 +1,7 @@
 {
   "name": "marshal-snippets",
   "displayName": "marshal Snippets",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "publisher": "marshal",
   "author": "marshal93@163.com",
   "categories": [
@@ -66,6 +66,10 @@
       {
         "language": "vue",
         "path": "./out/snippets/vue-el.json"
+      },
+      {
+        "language": "vue",
+        "path": "./out/snippets/vant.json"
       }
     ]
   },
